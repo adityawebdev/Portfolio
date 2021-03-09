@@ -1,0 +1,108 @@
+@import "./variables";
+@import "./utils";
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+@import "./skills";
+@import "./footer";
+@import "./contact";
+@import "./projects";
+@import "./gridoverlay";
+@import "./keyframes";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  user-select: none;
+}
+.nav {
+  background: $nav-background;
+  border-bottom: 0.3rem solid $sky-blue;
+  height: 3.5rem;
+  justify-content: flex-start;
+  animation: nav-load $nav-load-time ease;
+
+  a {
+    color: $white;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 2rem;
+    transition: all 0.3s ease-in-out;
+    font-size: 1.2rem;
+
+    &:hover {
+      color: $pinkish;
+    }
+  }
+}
+#about {
+  margin-top: 4rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  h1 {
+    margin-left: 32rem;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-family: "Raleway", sans-serif;
+    color: $contact-background;
+    margin-bottom: 0.5rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+    color: $grey-heading;
+  }
+}
+
+.underline {
+  border: 0.1rem solid $contact-background;
+  margin-bottom: 2rem;
+  width: 8.1rem;
+  margin-left: 32rem;
+  margin-bottom: 4rem;
+}
+
+.card {
+  width: 12rem;
+  justify-content: center;
+}
+.info {
+  margin-top: 4rem;
+  .left img {
+    height: 25rem;
+    width: 25rem;
+    border-radius: 8rem;
+    animation: from-left 2.6s ease;
+  }
+  .right {
+    margin-left: 10rem;
+    animation: from-right 2.6s ease;
+    p {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+    }
+    a {
+      color: $pinkish;
+      text-decoration: none;
+      font-size: 1.2rem;
+      &:hover {
+        color: $sky-blue;
+      }
+    }
+  }
+}
+.line1 {
+  background: $sky-blue;
+  width: 100%;
+  height: 0.1rem;
+}
+.line2 {
+  background: $nav-background;
+  width: 100%;
+  height: 0.1rem;
+}

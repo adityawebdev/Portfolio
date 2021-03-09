@@ -1,0 +1,651 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.max-width1 {
+  width: 80vw;
+}
+
+.skill-section {
+  opacity: 0;
+  -webkit-transform: translateX(-400%);
+          transform: translateX(-400%);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.active1 {
+  opacity: 1;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.skills {
+  width: 100%;
+  max-width: 50rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  margin-top: 5rem;
+  margin-left: 23rem;
+  margin-right: 10rem;
+}
+
+.skills h1 {
+  margin-left: 20rem;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-family: "Raleway", sans-serif;
+  color: #252934;
+  margin-bottom: 0.5rem;
+}
+
+.skill-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 1.2rem 0;
+}
+
+.skill-bar {
+  height: 0.8rem;
+  background: white;
+  border-radius: 1rem;
+}
+
+.skill-per {
+  height: 0.8rem;
+  background-color: #62cbcf;
+  border-radius: 1rem;
+  width: attr(per);
+  position: relative;
+}
+
+.skill-per:hover,
+.skill-per :focus {
+  background-color: #e31b6d;
+}
+
+.skill-per::before {
+  content: attr(per);
+  position: absolute;
+  padding: 0.2rem 0.3rem;
+  background-color: #1b242f;
+  color: white;
+  font-size: 1rem;
+  border-radius: 0.2rem;
+  top: -2.3rem;
+  right: 0;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+}
+
+.skill-per::after {
+  content: "";
+  position: absolute;
+  background-color: #1b242f;
+  width: 0.6rem;
+  height: 0.6rem;
+  top: -1rem;
+  right: 0;
+  -webkit-transform: translateX(50%) rotate(45deg);
+          transform: translateX(50%) rotate(45deg);
+  border-radius: 0.1rem;
+}
+
+.underline-skills {
+  border: 0.1rem solid #252934;
+  margin-bottom: 2rem;
+  width: 8.1rem;
+  margin-left: 20rem;
+  margin-bottom: 4rem;
+}
+
+#footer {
+  background: #1b242f;
+}
+
+#footer h6 {
+  color: #878787;
+  font-size: 1rem;
+  padding-bottom: 2rem;
+  text-transform: uppercase;
+  font-family: serif;
+  font-weight: 100;
+  margin-left: 41.5rem;
+}
+
+#footer h6 span {
+  color: #e31b6d;
+}
+
+.social {
+  padding-top: 1.5rem;
+  margin-left: 36rem;
+  padding-bottom: 1rem;
+}
+
+.social-icons {
+  height: 4rem;
+  width: 4rem;
+}
+
+#up {
+  height: 3rem;
+  width: 4rem;
+  margin-left: 44.5rem;
+  margin-top: -1.5rem;
+  background: #e31b6d;
+  border-radius: 1rem;
+  z-index: 1000;
+}
+
+.contact {
+  background: #252934;
+  border-top: 0.4rem solid #62cbcf;
+}
+
+.contact h1 {
+  color: white;
+  margin-left: 40rem;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 0.5rem;
+  padding-top: 3rem;
+}
+
+.contact p {
+  color: #62cbcf;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+  margin-left: 36rem;
+}
+
+.underline-contact {
+  border: 0.1rem solid white;
+  margin-bottom: 2rem;
+  width: 11.5rem;
+  margin-left: 40rem;
+  margin-bottom: 3rem;
+}
+
+.form-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 5rem;
+  margin-left: 29.5rem;
+}
+
+.form-div .form-name input {
+  background: #1e242c;
+  color: #878787;
+  border: none;
+  margin-bottom: 0.5rem;
+  width: 35rem;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  height: 2.5rem;
+}
+
+.form-div .form-mail input {
+  background: #1e242c;
+  color: #878787;
+  border: none;
+  margin-bottom: 0.5rem;
+  width: 35rem;
+  height: 2.5rem;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+}
+
+.form-div .form-msg textarea {
+  background: #1e242c;
+  color: #878787;
+  border: none;
+  margin-bottom: 0.5rem;
+  width: 35rem;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+}
+
+#form-submit {
+  margin-top: 0.3rem;
+  padding: 0.5rem;
+  width: 8rem;
+  height: 3rem;
+  color: white;
+  border: 0.1rem solid white;
+  background: transparent;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 0.2rem;
+  margin-left: 13rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#form-submit:hover {
+  background: #62cbcf;
+  border-color: #62cbcf;
+}
+
+.projects {
+  opacity: 0;
+  -webkit-transform: translateX(-400%);
+          transform: translateX(-400%);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.projects h1 {
+  margin-left: 40rem;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-family: "Raleway", sans-serif;
+  color: #252934;
+  margin-bottom: 0.5rem;
+  padding-top: 5rem;
+}
+
+.active {
+  opacity: 1;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.underline-projects {
+  border: 0.1rem solid #252934;
+  margin-bottom: 2rem;
+  width: 12.5rem;
+  margin-left: 40rem;
+  margin-bottom: 4rem;
+}
+
+.projects-grid {
+  padding-top: 4rem;
+  padding-bottom: 5rem;
+  margin-left: 17%;
+}
+
+.container {
+  position: relative;
+  width: 20rem;
+  height: 11rem;
+  display: inline-block;
+}
+
+.image {
+  display: block;
+  width: 20rem;
+  height: 11rem;
+  border: 0.1rem solid #1b242f;
+}
+
+.text {
+  color: #e31b6d;
+  font-size: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.text h3 {
+  color: black;
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.text a button {
+  background: transparent;
+  color: black;
+  text-transform: uppercase;
+  border: 0.1rem solid #e31b6d;
+  width: 8rem;
+  height: 2.5rem;
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  border-radius: 0.2rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.text a button:hover {
+  background: #e31b6d;
+  color: white;
+}
+
+.overlay {
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+.container:hover .overlay,
+.container:hover .overlayFade {
+  opacity: 1;
+}
+
+.container:hover .overlayLeft,
+.container:hover .overlayRight {
+  width: 100%;
+}
+
+.container:hover .overlayTop,
+.container:hover .overlayBottom {
+  height: 100%;
+}
+
+.overlayCross {
+  width: 0%;
+  height: 0;
+  top: 0;
+  left: 0;
+  background-color: white;
+}
+
+.container:hover .overlayCross {
+  height: 100%;
+  width: 100%;
+}
+
+@-webkit-keyframes nav-load {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes nav-load {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes footer-load {
+  0% {
+    -webkit-transform: translateY(500%);
+            transform: translateY(500%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes footer-load {
+  0% {
+    -webkit-transform: translateY(500%);
+            transform: translateY(500%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes from-left {
+  0% {
+    -webkit-transform: translateX(-450%);
+            transform: translateX(-450%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes from-left {
+  0% {
+    -webkit-transform: translateX(-450%);
+            transform: translateX(-450%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes from-top {
+  0% {
+    -webkit-transform: translateY(-500%);
+            transform: translateY(-500%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes from-top {
+  0% {
+    -webkit-transform: translateY(-500%);
+            transform: translateY(-500%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes from-bottom {
+  0% {
+    -webkit-transform: translateY(500%);
+            transform: translateY(500%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes from-bottom {
+  0% {
+    -webkit-transform: translateY(500%);
+            transform: translateY(500%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes from-right {
+  0% {
+    -webkit-transform: translateX(150%);
+            transform: translateX(150%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes from-right {
+  0% {
+    -webkit-transform: translateX(150%);
+            transform: translateX(150%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+.from-left {
+  -webkit-animation: from-left 1.5s ease-in-out;
+          animation: from-left 1.5s ease-in-out;
+}
+
+.from-right {
+  -webkit-animation: from-right 1.5s ease-in-out;
+          animation: from-right 1.5s ease-in-out;
+}
+
+.from-bottom {
+  -webkit-animation: from-bottom 1.5s ease-in-out;
+          animation: from-bottom 1.5s ease-in-out;
+}
+
+.from-top {
+  -webkit-animation: from-top 1.5s ease-in-out;
+          animation: from-top 1.5s ease-in-out;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.nav {
+  background: #1b242f;
+  border-bottom: 0.3rem solid #62cbcf;
+  height: 3.5rem;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-animation: nav-load 1s ease;
+          animation: nav-load 1s ease;
+}
+
+.nav a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-left: 2rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  font-size: 1.2rem;
+}
+
+.nav a:hover {
+  color: #e31b6d;
+}
+
+#about {
+  margin-top: 4rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+#about h1 {
+  margin-left: 32rem;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-family: "Raleway", sans-serif;
+  color: #252934;
+  margin-bottom: 0.5rem;
+}
+
+#about h3 {
+  font-size: 1.5rem;
+  color: #878787;
+}
+
+.underline {
+  border: 0.1rem solid #252934;
+  margin-bottom: 2rem;
+  width: 8.1rem;
+  margin-left: 32rem;
+  margin-bottom: 4rem;
+}
+
+.card {
+  width: 12rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.info {
+  margin-top: 4rem;
+}
+
+.info .left img {
+  height: 25rem;
+  width: 25rem;
+  border-radius: 8rem;
+  -webkit-animation: from-left 2.6s ease;
+          animation: from-left 2.6s ease;
+}
+
+.info .right {
+  margin-left: 10rem;
+  -webkit-animation: from-right 2.6s ease;
+          animation: from-right 2.6s ease;
+}
+
+.info .right p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.info .right a {
+  color: #e31b6d;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.info .right a:hover {
+  color: #62cbcf;
+}
+
+.line1 {
+  background: #62cbcf;
+  width: 100%;
+  height: 0.1rem;
+}
+
+.line2 {
+  background: #1b242f;
+  width: 100%;
+  height: 0.1rem;
+}
+/*# sourceMappingURL=style.css.map */

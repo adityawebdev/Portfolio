@@ -1,0 +1,83 @@
+.contact {
+  background: $contact-background;
+  border-top: 0.4rem solid $sky-blue;
+
+  h1 {
+    color: $white;
+    margin-left: 40rem;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 0.5rem;
+    padding-top: 3rem;
+  }
+  p {
+    color: $sky-blue;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+    margin-left: 36rem;
+  }
+}
+.underline-contact {
+  border: 0.1rem solid $white;
+  margin-bottom: 2rem;
+  width: 11.5rem;
+  margin-left: 40rem;
+  margin-bottom: 3rem;
+}
+.form-div {
+  display: flex;
+  align-items: center;
+  padding-bottom: 5rem;
+  margin-left: 29.5rem;
+
+  .form-name input {
+    background: $contact-main;
+    color: $grey-heading;
+    border: none;
+    margin-bottom: 0.5rem;
+    width: 35rem;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    height: 2.5rem;
+  }
+  .form-mail input {
+    background: $contact-main;
+    color: $grey-heading;
+    border: none;
+    margin-bottom: 0.5rem;
+    width: 35rem;
+    height: 2.5rem;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+  }
+  .form-msg textarea {
+    background: $contact-main;
+    color: $grey-heading;
+    border: none;
+    margin-bottom: 0.5rem;
+    width: 35rem;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+  }
+}
+#form-submit {
+  margin-top: 0.3rem;
+  padding: 0.5rem;
+  width: 8rem;
+  height: 3rem;
+  color: $white;
+  border: 0.1rem solid $white;
+  background: transparent;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 0.2rem;
+  margin-left: 13rem;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background: $sky-blue;
+    border-color: $sky-blue;
+  }
+}

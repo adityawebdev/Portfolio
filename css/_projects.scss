@@ -1,0 +1,36 @@
+.projects {
+  // transform: scale(0.1);
+  // transition: all 1s ease-in-out;
+  opacity: 0;
+  transform: translateX(-400%);
+  transition: all 1s ease;
+  h1 {
+    margin-left: 40rem;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-family: "Raleway", sans-serif;
+    color: $contact-background;
+    margin-bottom: 0.5rem;
+    padding-top: 5rem;
+  }
+}
+.active {
+  // opacity: 1;
+  // transform: scale(1);
+
+  opacity: 1;
+  transform: translateX(0%);
+}
+.underline-projects {
+  border: 0.1rem solid $contact-background;
+  margin-bottom: 2rem;
+  width: 12.5rem;
+  margin-left: 40rem;
+  margin-bottom: 4rem;
+}
+
+.projects-grid {
+  padding-top: 4rem;
+  padding-bottom: 5rem;
+  margin-left: 17%;
+}
